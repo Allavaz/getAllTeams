@@ -12,7 +12,7 @@ let missingTeams = [];
 app.on('ready', () => {
 	dialog.showOpenDialog(
 		{filters: [
-			{name:'JSON', extensions: ['json']}
+			{name:'Teams.json', extensions: ['json']}
 		]},
 		{properties: ['openFile']}
 	).then((result) => {
